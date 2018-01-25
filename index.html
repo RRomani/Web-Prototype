@@ -12,7 +12,31 @@
   body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
 
-  .fa-anchor,.fa-coffee {font-size:200px}
+  .center {
+    text-align: center;
+  }
+
+  .pagination {
+    display: inline-block;
+  }
+
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+  }
+
+  .pagination a.active {
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+  }
+
+  .pagination a:hover:not(.active) {background-color: #ddd;}
 </style>
 <body>
 
@@ -54,64 +78,74 @@
 -->
 
 <header class="w3-container w3-red w3-center" style="padding:128px 16px">
-<h1 class="w3-margin w3-jumbo">Home</h1>
+  <h1 class="w3-margin w3-jumbo">Home</h1>
   <p class="w3-xlarge">Descubre que esta pasando a tu alrededor</p>
 </header>
 
 <!-- First Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container">
+<div class="w3-row-padding w3-padding-32 w3-container" id="not1">
   <div class="w3-content">
-    <div class="w3-twothird">
-      <h1>Lorem Ipsum</h1>
-      <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
-
-      <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <a href="#not1">
+      <div class="w3-twothird" style="padding-right: 10%;">
+        <h2 class="w3-text-red">Corte en la calle Verge de Montserrat para transformarla en una zona peatonal</h2>
+        <p class="w3-text-grey">A partir del 22 de enero, con motivo del inicio de la segunda fase de remodelación de la calle Verge de Montserrat, se cierra al tráfico de vehículos el tramo comprendido entre la calle Rubió i Ors y el paseo de los Ferrocarrils Catalans, para transformarlo en una calle con prioridad para los peatones, más verde y con zonas de descanso.</p>
       </div>
 
       <div class="w3-third w3-center">
-        <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
+        <img src="public/img/img_home_1.jpg" class="w3-padding-32">
       </div>
+    </a>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container" id="not2">
+  <div class="w3-content">
+    <a href="#not2">
+    <div class="w3-third w3-center">
+        <img src="public/img/img_home_2.jpg" class="w3-padding-32">
+    </div>
+
+    <div class="w3-twothird" style="padding-left: 12.5%;">
+      <h2 class="w3-text-red">El Ayuntamiento congela los impuestos municipales por tercer año consecutivo</h2>
+      <h5 class="w3-padding-32">La mayor parte de los ciudadanos pagarán lo mismo que en los últimos tres años.</h5>
+
+      <p class="w3-text-grey">El Ayuntamiento de Cornellà congelará, por tercer año consecutivo, la mayor parte de los impuestos municipales para el ejercicio 2018 con el objetivo de garantizar los ingresos necesarios para prestar los servicios a la ciudadanía y permitir la reactivación económica de la ciudad.</p>
+      </div>
+      </a>
     </div>
   </div>
 
-  <!-- Second Grid -->
-  <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-    <div class="w3-content">
-      <div class="w3-third w3-center">
-        <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>
-      </div>
-
-      <div class="w3-twothird">
-        <h1>Lorem Ipsum</h1>
-        <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
-
-        <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-          laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <div class="center">
+        <div class="pagination">
+          <a href="#" class="w3-disabled">&laquo;</a>
+          <a href="#" class="active">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
+          <a href="#">6</a>
+          <a href="#">&raquo;</a>
         </div>
-      </div>
+      </div> 
+
+  <div class="w3-container w3-black w3-center w3-opacity w3-padding-32">
+    <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-center w3-opacity">  
+    <div class="w3-xlarge w3-padding-32">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
     </div>
+  </footer>
 
-    <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-      <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
-    </div>
-
-    <!-- Footer -->
-    <footer class="w3-container w3-padding-64 w3-center w3-opacity">  
-      <div class="w3-xlarge w3-padding-32">
-        <i class="fa fa-facebook-official w3-hover-opacity"></i>
-        <i class="fa fa-instagram w3-hover-opacity"></i>
-        <i class="fa fa-snapchat w3-hover-opacity"></i>
-        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-        <i class="fa fa-twitter w3-hover-opacity"></i>
-        <i class="fa fa-linkedin w3-hover-opacity"></i>
-      </div>
-      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-    </footer>
-
-    <script>
+  <script>
 // Used to toggle the menu on small screens when clicking on the menu button
 function myFunction() {
   var x = document.getElementById("navDemo");
