@@ -15,11 +15,15 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <body class="w3-pale-blue">
   <?php
     // Import del archivo funciones.php
-  include 'funcionesPHP.php';
-  if (!comprobarSesionIniciada() || $_SESSION['tipoUsuario'] != "administrador") {
-    // Redirigimos al usuario que no haya iniciado sesión antes
-    header('Location: ../index.php');
-  }
+    include 'funcionesPHP.php';
+    if (isset($_POST) and $_SESSION["cantidad"] == 1){
+      iniciarSesion($_POST["nombreUsuario"],$_POST["contrasena"]);
+    }
+    
+    if (!comprobarSesionIniciada() || $_SESSION['tipoUsuario'] != "administrador") {
+      // Redirigimos al usuario que no haya iniciado sesión antes
+      header('Location: ../index.php');
+    }
   ?>
   <!-- Navbar -->
   <div class="w3-top">
@@ -64,12 +68,12 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   </div>
   <br>
   <div class="w3-container w3-center">
-    <form class="w3-bottombar w3-topbar w3-border-teal" action="">
+    <form class="w3-bottombar w3-topbar w3-border-teal" method="POST">
       <br>
       <label class="w3-text-teal"><b><i>Nickname</i> o correo</b></label>
       <div class="w3-container w3-row">
         <div class="w3-col w3-container" style="width:30%"></div>
-        <input class="w3-col w3-input w3-center w3-round-xlarge w3-border w3-border-blue" style="width:40%" type="text"></input>
+        <input class="w3-col w3-input w3-center w3-round-xlarge w3-border w3-border-blue" style="width:40%" type="text" name="nombreUsuario"></input>
         <div class="w3-col w3-container" style="width:30%"></div>
       </div>
       <br>
@@ -80,7 +84,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
       </div>
       <div class="w3-container w3-row">
         <div class="w3-col w3-container" style="width:30%"></div>
-        <input class="w3-col w3-input w3-center w3-round-xlarge w3-border w3-border-blue" style="width:40%" type="text"></input>
+        <input class="w3-col w3-input w3-center w3-round-xlarge w3-border w3-border-blue" style="width:40%" type="text" name="contrasena"></input>
         <div class="w3-col w3-container" style="width:30%"></div>
       </div>
       <br>
