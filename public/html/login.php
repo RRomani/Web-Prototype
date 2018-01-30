@@ -36,10 +36,10 @@
         <img src="../../logo.png" style="width: 20%;">
       </a>
       <a href="../../index.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Inicio</a>
-      <a href="debates.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Foro</a>
-      <a href="denuncias.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Denuncias</a>
-      <a href="trueques.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Trueques</a>
-      <a href="chat.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Chat</a>
+      <a href="debates.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-disabled">Foro</a>
+      <a href="denuncias.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-disabled">Denuncias</a>
+      <a href="trueques.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-disabled">Trueques</a>
+      <a href="chat.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-disabled">Chat</a>
       <div class="w3-display-right">
         <a href="login.php" class="w3-bar-item w3-button w3-padding-large w3-white w3-hover-white">Login</a>
         <a href="registro.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Registro</a>
@@ -49,10 +49,10 @@
     <!-- Navbar on small screens -->
     <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
       <a href="../../index.php" class="w3-bar-item w3-button w3-padding-large">Inicio</a>
-      <a href="debates.html" class="w3-bar-item w3-button w3-padding-large">Foro</a>
-      <a href="denuncias.html" class="w3-bar-item w3-button w3-padding-large">Denuncias</a>
-      <a href="trueques.html" class="w3-bar-item w3-button w3-padding-large">Trueques</a>
-      <a href="chat.html" class="w3-bar-item w3-button w3-padding-large">Chat</a>
+      <a href="debates.html" class="w3-bar-item w3-button w3-padding-large w3-disabled">Foro</a>
+      <a href="denuncias.html" class="w3-bar-item w3-button w3-padding-large w3-disabled">Denuncias</a>
+      <a href="trueques.html" class="w3-bar-item w3-button w3-padding-large w3-disabled">Trueques</a>
+      <a href="chat.html" class="w3-bar-item w3-button w3-padding-large ">Chat</a>
       <a href="login.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-teal">Login</a>
       <a href="registro.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-teal">Registro</a>
     </div>
