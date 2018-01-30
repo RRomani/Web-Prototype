@@ -45,7 +45,7 @@
     <div class="w3-bar w3-red w3-card w3-left-align w3-large">
       <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
       <!--<a href="#" class="w3-bar-item w3-button"><img src="logo.jpg" alt="Home" width="25%"></a> -->
-      <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Inicio</a>
+      <a href="index.php" class="w3-bar-item w3-button w3-padding-large w3-white">Inicio</a>
       <a href="public/html/debates.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Foro</a>
       <a href="public/html/denuncias.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Denuncias</a>
       <a href="public/html/trueques.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Trueques</a>
@@ -82,12 +82,21 @@
     </div>  
   </header>
 -->
-
 <header class="w3-container w3-red w3-center" style="padding:128px 16px">
 	<?php
-		<h1 class="w3-margin w3-jumbo">Cornellà de Llobregat</h1>
-		<p class="w3-xlarge">Descubre que esta pasando a tu alrededor</p>
+		if (false){
+			echo "<div class='w3-cell-row w3-mobile'>";
+			echo "<div class='w3-container w3-cell w3-mobile'><h1 class='w3-center w3-margin w3-jumbo'>Cornellà de Llobregat</h1>";
+			echo "<p class='w3-xlarge w3-center'>Descubre que esta pasando a tu alrededor</p></div>";
 
+			echo "<div class='w3-container w3-cell w3-mobile'><div class='w3-card-4 w3-dark-grey w3-center' style='width:50%'>";
+			echo "<div class='w3-container w3-center'><h3>Usuario</h3>";
+			echo "<img src='public/img/img_avatar3.png' alt='Avatar' style='width:80%'><h5>anonim</h5>";
+			echo "</div></div></div></div>";
+		}else{
+			echo "<h1 class='w3-margin w3-jumbo w3-mobile'>Cornellà de Llobregat</h1>";
+			echo "<p class='w3-xlarge w3-mobile'>Descubre que esta pasando a tu alrededor</p>";
+		}
 	?>
 </header>
 
@@ -137,10 +146,6 @@
     <a href="#">&raquo;</a>
   </div>
 </div> 
-
-<div class="w3-container w3-black w3-center w3-opacity w3-padding-32">
-  <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
-</div>
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-32 w3-center w3-opacity">  

@@ -1,13 +1,13 @@
 <?php 
   /*
     Descripción: guarda los datos proporcionados por el usuario en variables SESSION.
-    Parámetros de entrada: identificador del usuario (string), tipo de usuario (string) y contraseña (string).
+    Parámetros de entrada: identificador del usuario (string), contraseña (string).
     Valor de retorno: -
   */
   function iniciarSesion($usuario, $contrasena) {
     session_start();
     $_SESSION['nombreUsuario'] = $usuario;
-    $_SESSION['contrasena'] = $contrasenaEncriptada;
+    $_SESSION['contrasena'] = $contrasena;
   }
 
   /*
@@ -23,13 +23,12 @@
   }
 
   /*
-    Descripción: comprueba que el usuario haya iniciado sesión.
+    Descripción: comprueba que el usuario sea correcto
     Parámetros de entrada: -
-    Valor de retorno: true (ha iniciado sesión) o false (no ha iniciado sesión).
+    Valor de retorno: true (correcto) o false (incorrecto).
   */
   function comprobarSesionIniciada() {
-    session_start();
-    if (isset($_SESSION['nombreUsuario'])) {
+    if (isset($_SESSION['nombreUsuario']) && ($_SESSION['nombreUsuario'] == "anonim" || $_SESSION['nombreUsuario'] == "anonim@hotmail.com") && $_SESSION['contrasena'] == 'anonim'){
       return true;
     }
     return false;
