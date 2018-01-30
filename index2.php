@@ -138,23 +138,6 @@
   </div>
 </div>
 
-<div class="center">
-  <div class="pagination">
-    <a href="#" class="w3-disabled">&laquo;</a>
-    <a href="#" class="active">1</a>
-    <a href="#">2</a>
-    <a href="#">3</a>
-    <a href="#">4</a>
-    <a href="#">5</a>
-    <a href="#">6</a>
-    <a href="#">&raquo;</a>
-  </div>
-</div> 
-
-<div class="w3-container w3-black w3-center w3-opacity w3-padding-32">
-  <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
-</div>
-
 <!-- Footer -->
 <footer class="w3-container w3-padding-32 w3-center w3-opacity">  
   <div class="w3-xlarge w3-padding-32">

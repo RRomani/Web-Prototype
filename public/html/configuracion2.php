@@ -53,7 +53,7 @@
       <a href="chat2.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Chat</a>
       <div class="w3-display-right">
         <div class="w3-xxlarge w3-cell">
-          <a href="configuracion.php"><i class="material-icons w3-xxlarge w3-blue">person</i></a>
+          <a href="configuracion2.php"><i class="material-icons w3-xxlarge w3-blue">person</i></a>
         </div>
         <div class="w3-cell">
           <a href="../../index.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-blue w3-cell">Cerrar Sesión</a>
@@ -124,14 +124,14 @@
   <div class="w3-row w3-section">
     <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-phone"></i></div>
       <div class="w3-rest">
-        <input class="w3-input w3-border w3-hover-blue w3-border w3-border-blue w3-text-blue" name="movil" type="text" value="686430347">
+        <input class="w3-input w3-border w3-hover-blue w3-border w3-border-blue w3-text-blue" name="movil" type="text" value="685420345">
       </div>
   </div>
 
   <div class="w3-row w3-section">
     <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-car"></i></div>
       <div class="w3-rest">
-        <input class="w3-input w3-border w3-hover-blue w3-border w3-border-blue w3-text-blue" name="direccion" type="text" value="C/ Pi i Suñer, 1º a">
+        <input class="w3-input w3-border w3-hover-blue w3-border w3-border-blue w3-text-blue" name="direccion" type="text" value="C/ Josep Maria Verdaguer, 2, 4º 1ra">
       </div>
   </div>
   
