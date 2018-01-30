@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-<title>Inicio</title>
+<title>Configuración</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" href="logo.jpg">
+<link rel="shortcut icon" href="../../logo.jpg">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
@@ -53,7 +53,7 @@
       <a href="public/html/chat2.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Chat</a>
       <div class="w3-display-right">
         <div class="w3-xxlarge w3-cell">
-          <a href="public/html/configuracion.php"><i class="material-icons w3-xxlarge w3-hover-blue">person</i></a>
+          <a href="public/html/configuracion.php"><i class="material-icons w3-xxlarge w3-blue">person</i></a>
         </div>
         <div class="w3-cell">
           <a href="index.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-blue w3-cell">Cerrar Sesión</a>
@@ -90,12 +90,12 @@
 	<?php
 		if (true){
 			echo "<div class='w3-cell-row w3-mobile'>";
-			echo "<div class='w3-container w3-cell w3-mobile'><h1 class='w3-center w3-margin w3-jumbo'>Cornellà de Llobregat</h1>";
-			echo "<p class='w3-xlarge w3-center'>Descubre que esta pasando a tu alrededor</p></div>";
+			echo "<div class='w3-container w3-cell w3-mobile'><h1 class='w3-center w3-margin w3-jumbo'>Área personal</h1>";
+			echo "<p class='w3-xlarge w3-center'>Edita tu información</p></div>";
 
 			echo "<div class='w3-container w3-cell w3-mobile'><div class='w3-card-4 w3-dark-grey w3-center' style='width:50%'>";
 			echo "<div class='w3-container w3-center'><h3>Usuario</h3>";
-			echo "<img src='public/img/img_avatar3.png' alt='Avatar' style='width:80%'><h5>anonim</h5>";
+			echo "<img src='../img/img_avatar3.png' alt='Avatar' style='width:80%'><h5>anonim</h5>";
 			echo "</div></div></div></div>";
 		}else{
 			echo "<h1 class='w3-margin w3-jumbo w3-mobile'>Cornellà de Llobregat</h1>";
@@ -114,7 +114,7 @@
       </div>
 
       <div class="w3-third w3-center">
-        <img src="public/img/img_home_1.jpg" class="w3-padding-32">
+        <img src="../img/img_home_1.jpg" class="w3-padding-32">
       </div>
     </a>
   </div>
@@ -125,7 +125,7 @@
   <div class="w3-content">
     <a href="#not2">
       <div class="w3-third w3-center">
-        <img src="public/img/img_home_2.jpg" class="w3-padding-32">
+        <img src="../img/img_home_2.jpg" class="w3-padding-32">
       </div>
 
       <div class="w3-twothird" style="padding-left: 12.5%;">
