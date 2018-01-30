@@ -52,7 +52,7 @@
       <a href="debates.html" class="w3-bar-item w3-button w3-padding-large w3-disabled">Foro</a>
       <a href="denuncias.html" class="w3-bar-item w3-button w3-padding-large w3-disabled">Denuncias</a>
       <a href="trueques.html" class="w3-bar-item w3-button w3-padding-large w3-disabled">Trueques</a>
-      <a href="chat.html" class="w3-bar-item w3-button w3-padding-large ">Chat</a>
+      <a href="chat.html" class="w3-bar-item w3-button w3-padding-large w3-disabled">Chat</a>
       <a href="login.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-teal">Login</a>
       <a href="registro.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-teal">Registro</a>
     </div>
