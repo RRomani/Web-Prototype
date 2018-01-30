@@ -46,6 +46,9 @@
     <div class="w3-bar w3-red w3-card w3-left-align w3-large">
       <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
       <!--<a href="#" class="w3-bar-item w3-button"><img src="logo.jpg" alt="Home" width="25%"></a> -->
+      <a href="../../index.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">
+        <img src="../../logo.png" style="width: 20%;">
+      </a>
       <a href="../../index2.php" class="w3-bar-item w3-button w3-padding-large">Inicio</a>
       <a href="debates2.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Foro</a>
       <a href="denuncias2.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Denuncias</a>
@@ -88,51 +91,51 @@
 -->
 <header class="w3-container w3-red w3-center" style="padding:128px 16px">
 	<?php
-		if (true){
-			echo "<div class='w3-cell-row w3-mobile'>";
-			echo "<div class='w3-container w3-cell w3-mobile'><h1 class='w3-center w3-margin w3-jumbo'>Área personal</h1>";
-			echo "<p class='w3-xlarge w3-center'>Edita tu información</p></div>";
+  if (true){
+   echo "<div class='w3-cell-row w3-mobile'>";
+   echo "<div class='w3-container w3-cell w3-mobile'><h1 class='w3-center w3-margin w3-jumbo'>Área personal</h1>";
+   echo "<p class='w3-xlarge w3-center'>Edita tu información</p></div>";
 
-			echo "<div class='w3-container w3-cell w3-mobile'><div class='w3-card-4 w3-dark-grey w3-center' style='width:50%'>";
-			echo "<div class='w3-container w3-center'><h3>Usuario</h3>";
-			echo "<img src='../img/img_avatar3.png' alt='Avatar' style='width:80%'><h5>anonim</h5>";
-			echo "</div></div></div></div>";
-		}else{
-			echo "<h1 class='w3-margin w3-jumbo w3-mobile'>Cornellà de Llobregat</h1>";
-			echo "<p class='w3-xlarge w3-mobile'>Descubre que esta pasando a tu alrededor</p>";
-		}
-	?>
+   echo "<div class='w3-container w3-cell w3-mobile'><div class='w3-card-4 w3-dark-grey w3-center' style='width:50%'>";
+   echo "<div class='w3-container w3-center'><h3>Usuario</h3>";
+   echo "<img src='../img/img_avatar3.png' alt='Avatar' style='width:80%'><h5>anonim</h5>";
+   echo "</div></div></div></div>";
+ }else{
+   echo "<h1 class='w3-margin w3-jumbo w3-mobile'>Cornellà de Llobregat</h1>";
+   echo "<p class='w3-xlarge w3-mobile'>Descubre que esta pasando a tu alrededor</p>";
+ }
+ ?>
 </header>
 
 <form action="configuracion2.php" class="w3-container w3-card-4 w3-pale-blue w3-text-teal w3-margin w3-hover-shadow w3-animate-bottom">
   <h2 class="w3-center">Edita el campo que desees</h2>
- 
+  
   <div class="w3-row w3-section">
     <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
-      <div class="w3-rest">
-        <input class="w3-input w3-border w3-hover-blue w3-border w3-border-blue w3-text-blue" name="nombre" type="text" value="anonim Gutierrez">
-      </div>
+    <div class="w3-rest">
+      <input class="w3-input w3-border w3-hover-blue w3-border w3-border-blue w3-text-blue" name="nombre" type="text" value="anonim Gutierrez">
+    </div>
   </div>
 
   <div class="w3-row w3-section">
     <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
-      <div class="w3-rest">
-        <input class="w3-input w3-border w3-hover-blue w3-border w3-border-blue w3-text-blue" name="nickname" type="text" value="anonim">
-      </div>
+    <div class="w3-rest">
+      <input class="w3-input w3-border w3-hover-blue w3-border w3-border-blue w3-text-blue" name="nickname" type="text" value="anonim">
+    </div>
   </div>
 
   <div class="w3-row w3-section">
     <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-phone"></i></div>
-      <div class="w3-rest">
-        <input class="w3-input w3-border w3-hover-blue w3-border w3-border-blue w3-text-blue" name="movil" type="text" value="685420345">
-      </div>
+    <div class="w3-rest">
+      <input class="w3-input w3-border w3-hover-blue w3-border w3-border-blue w3-text-blue" name="movil" type="text" value="685420345">
+    </div>
   </div>
 
   <div class="w3-row w3-section">
     <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-car"></i></div>
-      <div class="w3-rest">
-        <input class="w3-input w3-border w3-hover-blue w3-border w3-border-blue w3-text-blue" name="direccion" type="text" value="C/ Josep Maria Verdaguer, 2, 4º 1ra">
-      </div>
+    <div class="w3-rest">
+      <input class="w3-input w3-border w3-hover-blue w3-border w3-border-blue w3-text-blue" name="direccion" type="text" value="C/ Josep Maria Verdaguer, 2, 4º 1ra">
+    </div>
   </div>
   
   <div class="w3-container w3-row">
